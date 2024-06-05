@@ -19,7 +19,13 @@ TEST(MatrixMultiplicationTest, TestMultiplyMatrices) {
   ASSERT_EQ(C, expected) << "Matrix multiplication test failed! :(((()";
 }
 
+// To broaden the test coverage, the following test cases were created:
+
 // Test Zero Matrices
+// Check the correctness of matrix multiplication between zero matrices. 
+// The precondition to be satisfied is the correct size of the matrices.
+// We expect an identity matrix as result of multiplication, but the final status // is FAILED
+
 TEST(MatrixMultiplicationTest, TestMultiplyZeroMatrices) {
   std::vector<std::vector<int>> A = {{0, 0, 0}, {0, 0, 0}};
   std::vector<std::vector<int>> B = {{0, 0}, {0, 0}, {0, 0}};
